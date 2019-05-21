@@ -1,0 +1,3 @@
+(fp_lib_table
+  (lib (name box_plate_footprints)(type KiCad)(uri ${KIPRJMOD}/library/box_plate_footprints.pretty)(options "")(descr ""))
+)
