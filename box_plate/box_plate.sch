@@ -1,4 +1,5 @@
 EESchema Schematic File Version 4
+LIBS:box_plate-cache
 EELAYER 29 0
 EELAYER END
 $Descr A4 11693 8268
@@ -205,20 +206,6 @@ Wire Wire Line
 	4050 4450 4050 4600
 Wire Wire Line
 	5150 1800 5150 1900
-Wire Wire Line
-	4900 3300 5100 3300
-Wire Wire Line
-	5100 3300 5100 4250
-Wire Wire Line
-	5100 4250 4700 4250
-Wire Wire Line
-	4700 4350 5200 4350
-Wire Wire Line
-	5200 4350 5200 3200
-Wire Wire Line
-	5200 3200 4900 3200
-NoConn ~ 2600 2900
-NoConn ~ 2600 3000
 NoConn ~ 4000 3300
 NoConn ~ 4000 3200
 NoConn ~ 4000 2200
@@ -309,18 +296,6 @@ F 3 "~" H 5800 2000 50  0001 C CNN
 	1    5800 2000
 	1    0    0    -1  
 $EndComp
-Wire Wire Line
-	4000 2800 3050 2800
-Wire Wire Line
-	3050 2800 3050 3100
-Wire Wire Line
-	3050 3100 2600 3100
-Wire Wire Line
-	4000 2900 2900 2900
-Wire Wire Line
-	2900 2900 2900 2800
-Wire Wire Line
-	2900 2800 2600 2800
 $Comp
 L power:GNDA #PWR0114
 U 1 1 5CECDA99
@@ -375,8 +350,6 @@ F 3 "~" H 4400 4250 50  0001 C CNN
 	1    4400 4250
 	1    0    0    -1  
 $EndComp
-NoConn ~ 4000 3100
-NoConn ~ 4000 3000
 $Comp
 L box_plate_symbols:RSL10_EVK U3
 U 1 1 5CE4FB71
@@ -387,37 +360,6 @@ F 2 "Module:Arduino_UNO_R3_WithMountingHoles" H 4400 1350 50  0001 C CNN
 F 3 "" H 4400 1350 50  0001 C CNN
 	1    4400 1350
 	1    0    0    -1  
-$EndComp
-Wire Wire Line
-	5300 2900 5300 4900
-Wire Wire Line
-	4900 2900 5300 2900
-Wire Wire Line
-	4900 2800 5400 2800
-Wire Wire Line
-	5400 2800 5400 5000
-Wire Wire Line
-	5400 5000 3850 5000
-Wire Wire Line
-	3750 4900 3750 4250
-Wire Wire Line
-	3750 4900 5300 4900
-Wire Wire Line
-	3750 4250 4200 4250
-Wire Wire Line
-	3850 5000 3850 4350
-Wire Wire Line
-	3850 4350 4200 4350
-$Comp
-L Device:R R1
-U 1 1 5CEEBCF7
-P 3800 4150
-F 0 "R1" V 3593 4150 50  0000 C CNN
-F 1 "0" V 3684 4150 50  0000 C CNN
-F 2 "Resistor_THT:R_Axial_DIN0204_L3.6mm_D1.6mm_P7.62mm_Horizontal" V 3730 4150 50  0001 C CNN
-F 3 "~" H 3800 4150 50  0001 C CNN
-	1    3800 4150
-	0    1    1    0   
 $EndComp
 Connection ~ 4050 4150
 Wire Wire Line
@@ -435,15 +377,11 @@ F 3 "" H 3550 3950 50  0001 C CNN
 $EndComp
 Wire Wire Line
 	3550 3950 3550 4150
-Wire Wire Line
-	3550 4150 3650 4150
-Wire Wire Line
-	3950 4150 4050 4150
 $Comp
-L power:GND #PWR?
+L power:GND #PWR06
 U 1 1 5CEFA2B6
 P 5600 3150
-F 0 "#PWR?" H 5600 2900 50  0001 C CNN
+F 0 "#PWR06" H 5600 2900 50  0001 C CNN
 F 1 "GND" H 5605 2977 50  0000 C CNN
 F 2 "" H 5600 3150 50  0001 C CNN
 F 3 "" H 5600 3150 50  0001 C CNN
@@ -454,4 +392,145 @@ Wire Wire Line
 	4900 3000 5600 3000
 Wire Wire Line
 	5600 3000 5600 3150
+$Comp
+L Connector_Generic:Conn_02x04_Odd_Even J2
+U 1 1 5CE507D7
+P 2050 4500
+F 0 "J2" H 2100 4725 50  0000 C CNN
+F 1 "Conn_02x04_Odd_Even" H 2100 4726 50  0001 C CNN
+F 2 "Connector_PinHeader_2.54mm:PinHeader_2x04_P2.54mm_Vertical" H 2050 4500 50  0001 C CNN
+F 3 "~" H 2050 4500 50  0001 C CNN
+	1    2050 4500
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR03
+U 1 1 5CE52F36
+P 2500 4950
+F 0 "#PWR03" H 2500 4700 50  0001 C CNN
+F 1 "GND" H 2505 4777 50  0000 C CNN
+F 2 "" H 2500 4950 50  0001 C CNN
+F 3 "" H 2500 4950 50  0001 C CNN
+	1    2500 4950
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GNDA #PWR04
+U 1 1 5CE53398
+P 1700 4950
+F 0 "#PWR04" H 1700 4700 50  0001 C CNN
+F 1 "GNDA" H 1705 4777 50  0000 C CNN
+F 2 "" H 1700 4950 50  0001 C CNN
+F 3 "" H 1700 4950 50  0001 C CNN
+	1    1700 4950
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	2350 4700 2500 4700
+Wire Wire Line
+	2500 4700 2500 4950
+$Comp
+L power:+5V #PWR05
+U 1 1 5CE5AA2A
+P 2500 4250
+F 0 "#PWR05" H 2500 4100 50  0001 C CNN
+F 1 "+5V" H 2515 4423 50  0000 C CNN
+F 2 "" H 2500 4250 50  0001 C CNN
+F 3 "" H 2500 4250 50  0001 C CNN
+	1    2500 4250
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:+12V #PWR02
+U 1 1 5CE5B1D0
+P 1700 4250
+F 0 "#PWR02" H 1700 4100 50  0001 C CNN
+F 1 "+12V" H 1715 4423 50  0000 C CNN
+F 2 "" H 1700 4250 50  0001 C CNN
+F 3 "" H 1700 4250 50  0001 C CNN
+	1    1700 4250
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	2350 4600 2500 4600
+Wire Wire Line
+	2500 4600 2500 4700
+Connection ~ 2500 4700
+Wire Wire Line
+	1850 4600 1700 4600
+Wire Wire Line
+	1700 4600 1700 4700
+Wire Wire Line
+	1850 4700 1700 4700
+Connection ~ 1700 4700
+Wire Wire Line
+	1700 4700 1700 4950
+Wire Wire Line
+	1700 4250 1700 4400
+Wire Wire Line
+	1700 4500 1850 4500
+Wire Wire Line
+	1850 4400 1700 4400
+Connection ~ 1700 4400
+Wire Wire Line
+	1700 4400 1700 4500
+Wire Wire Line
+	2350 4400 2500 4400
+Wire Wire Line
+	2500 4400 2500 4250
+Wire Wire Line
+	2350 4500 2500 4500
+Wire Wire Line
+	2500 4500 2500 4400
+Connection ~ 2500 4400
+Wire Wire Line
+	2600 2800 4000 2800
+Wire Wire Line
+	2600 2900 4000 2900
+Wire Wire Line
+	2600 3000 4000 3000
+Wire Wire Line
+	2600 3100 4000 3100
+Wire Wire Line
+	3550 4150 4050 4150
+Text Label 5150 3200 0    50   ~ 0
+DIO5
+Text Label 5150 3300 0    50   ~ 0
+DIO4
+Text Label 5150 2900 0    50   ~ 0
+DIO13
+Text Label 5150 2800 0    50   ~ 0
+DIO14
+Wire Wire Line
+	4900 2800 5150 2800
+Wire Wire Line
+	5150 2900 4900 2900
+Wire Wire Line
+	4900 3200 5150 3200
+Wire Wire Line
+	5150 3300 4900 3300
+Text Label 3950 4250 0    50   ~ 0
+DIO4
+Text Label 3950 4350 0    50   ~ 0
+DIO5
+Wire Wire Line
+	4200 4250 3950 4250
+Wire Wire Line
+	3950 4350 4200 4350
+Text Label 4850 4250 0    50   ~ 0
+DIO14
+Text Label 4850 4350 0    50   ~ 0
+DIO13
+Wire Wire Line
+	4700 4250 4850 4250
+Wire Wire Line
+	4850 4350 4700 4350
+Text Label 3050 2800 0    50   ~ 0
+DIO0
+Text Label 3050 2900 0    50   ~ 0
+DIO1
+Text Label 3050 3000 0    50   ~ 0
+DIO2
+Text Label 3050 3100 0    50   ~ 0
+DIO3
 $EndSCHEMATC
