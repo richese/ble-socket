@@ -1,0 +1,3 @@
+(sym_lib_table
+  (lib (name switch2-local)(type Legacy)(uri ${KIPRJMOD}/switch2-local.lib)(options "")(descr ""))
+)
